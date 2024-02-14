@@ -39,18 +39,8 @@ jobs:
     - name: Install MongoDB
       run: sleep 5 && mongod --bind_ip_all &
 
-    - name: Wait for MongoDB to start
-      run: sleep 10
-    - name: Install dependencies
-      run: npm i
-
-    - name: Start server
-      run: npm start &
-
-    - name: Wait for server to start
-      run: sleep 10
-
-    - name: Run tests
-      run: npm test
+    - run: npm i
+    - run: npm start &
+    - run: npm test
 
 
