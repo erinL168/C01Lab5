@@ -1,5 +1,5 @@
 
-const app = require('./server'); // Assuming your server file is named server.js
+const app = require('../server'); // Assuming your server file is named server.js
 
 describe('Endpoint Tests', () => {
   describe('GET /getAllNotes', () => {
