@@ -1,5 +1,3 @@
-
-
 test("/getAllNotes - Return list of zero notes for getAllNotes", async () => {
     const response = await fetch("http://localhost:4000/getAllNotes", {
         method: "GET",
@@ -246,3 +244,4 @@ test("/updateNoteColor - Update color of a note to red (#FF0000)", async () => {
     expect(response.status).toBe(200);
     expect(data.message).toBe("Note color updated successfully.");
 });
+
